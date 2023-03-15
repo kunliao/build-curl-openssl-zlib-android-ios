@@ -1,0 +1,1 @@
+# build-curl-openssl-zlib-for-android
