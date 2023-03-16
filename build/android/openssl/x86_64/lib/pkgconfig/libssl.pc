@@ -1,0 +1,11 @@
+prefix=/Users/liaokun/Downloads/build-curl-openssl-zlib-for-android/build/android/openssl/x86_64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenSSL-libssl
+Description: Secure Sockets Layer and cryptography libraries
+Version: 3.0.7
+Requires.private: libcrypto
+Libs: -L${libdir} -lssl
+Cflags: -I${includedir}
