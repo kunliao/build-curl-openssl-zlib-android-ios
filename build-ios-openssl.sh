@@ -69,7 +69,7 @@ $INSTALL_DIR/iphoneos/openssl.framework/openssl  \
 $INSTALL_DIR/arm64_iphoneos/lib/libssl.a \
 $INSTALL_DIR/arm64_iphoneos/lib/libcrypto.a 
 
-cp -r $INSTALL_DIR/arm64_iphoneos/include/ $INSTALL_DIR/iphoneos/openssl.framework/Headers
+cp -r $INSTALL_DIR/arm64_iphoneos/include/openssl/ $INSTALL_DIR/iphoneos/openssl.framework/Headers
 
 libtool -no_warning_for_no_symbols -static -o \
 $INSTALL_DIR/iphonesimulator/openssl.framework/openssl \
@@ -78,7 +78,7 @@ $INSTALL_DIR/libcrypto.a
 
 
 
-cp -r $INSTALL_DIR/arm64_iphonesimulator/include/ $INSTALL_DIR/iphonesimulator/openssl.framework/Headers
+cp -r $INSTALL_DIR/arm64_iphonesimulator/include/openssl/ $INSTALL_DIR/iphonesimulator/openssl.framework/Headers
 
 
 if [ -d $BUILD_DIR/openssl.xcframework ];then

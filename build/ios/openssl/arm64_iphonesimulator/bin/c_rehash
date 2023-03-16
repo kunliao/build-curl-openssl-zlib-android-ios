@@ -13,7 +13,7 @@
 # and add symbolic links to their hash values.
 
 my $dir = "";
-my $prefix = "/Users/liaokun/Downloads/build-curl-openssl-zlib-for-android/build/ios/openssl/arm64_iphonesimulator";
+my $prefix = "/Users/liaokun/Downloads/build-curl-openssl-zlib-android-ios/build/ios/openssl/arm64_iphonesimulator";
 
 my $errorcount = 0;
 my $openssl = $ENV{OPENSSL} || "openssl";

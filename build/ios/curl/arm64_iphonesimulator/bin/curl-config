@@ -23,7 +23,7 @@
 #
 ###########################################################################
 
-prefix="/Users/liaokun/Downloads/build-curl-openssl-zlib-for-android/build/ios/curl/arm64_iphonesimulator"
+prefix="/Users/liaokun/Downloads/build-curl-openssl-zlib-android-ios/build/ios/curl/arm64_iphonesimulator"
 exec_prefix=${prefix}
 includedir=${prefix}/include
 cppflag_curl_staticlib=-DCURL_STATICLIB
@@ -174,7 +174,7 @@ while test $# -gt 0; do
 
     --static-libs)
         if test "Xyes" != "Xno" ; then
-          echo "${exec_prefix}/lib/libcurl.a" -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.2.sdk -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.2.sdk/usr/lib -L/Users/liaokun/Downloads/build-curl-openssl-zlib-for-android/build/ios/openssl/arm64_iphonesimulator/lib -lssl -lcrypto -lz
+          echo "${exec_prefix}/lib/libcurl.a" -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.2.sdk -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.2.sdk/usr/lib -L/Users/liaokun/Downloads/build-curl-openssl-zlib-android-ios/build/ios/openssl/arm64_iphonesimulator/lib -lssl -lcrypto -lz
         else
           echo "curl was built with static libraries disabled" >&2
           exit 1
@@ -182,7 +182,7 @@ while test $# -gt 0; do
         ;;
 
     --configure)
-        echo " '--host=arm-apple-darwin' '--disable-shared' '--with-zlib=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.2.sdk/usr' '--with-openssl=/Users/liaokun/Downloads/build-curl-openssl-zlib-for-android/build/ios/openssl/arm64_iphonesimulator' '--prefix=/Users/liaokun/Downloads/build-curl-openssl-zlib-for-android/build/ios/curl/arm64_iphonesimulator' 'host_alias=arm-apple-darwin' 'CC=/Applications/Xcode.app/Contents/Developer/usr/bin/gcc' 'CFLAGS=-arch arm64 -pipe -Os -gdwarf-2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.2.sdk -miphonesimulator-version-min=12.0' 'LDFLAGS=-arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.2.sdk'"
+        echo " '--host=arm-apple-darwin' '--disable-shared' '--with-zlib=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.2.sdk/usr' '--with-openssl=/Users/liaokun/Downloads/build-curl-openssl-zlib-android-ios/build/ios/openssl/arm64_iphonesimulator' '--prefix=/Users/liaokun/Downloads/build-curl-openssl-zlib-android-ios/build/ios/curl/arm64_iphonesimulator' 'host_alias=arm-apple-darwin' 'CC=/Applications/Xcode.app/Contents/Developer/usr/bin/gcc' 'CFLAGS=-arch arm64 -pipe -Os -gdwarf-2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.2.sdk -miphonesimulator-version-min=12.0' 'LDFLAGS=-arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator16.2.sdk'"
         ;;
 
     *)

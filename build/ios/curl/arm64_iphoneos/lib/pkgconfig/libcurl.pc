@@ -25,7 +25,7 @@
 # This should most probably benefit from getting a "Requires:" field added
 # dynamically by configure.
 #
-prefix=/Users/liaokun/Downloads/build-curl-openssl-zlib-for-android/build/ios/curl/arm64_iphoneos
+prefix=/Users/liaokun/Downloads/build-curl-openssl-zlib-android-ios/build/ios/curl/arm64_iphoneos
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

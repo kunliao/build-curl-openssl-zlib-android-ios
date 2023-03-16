@@ -63,10 +63,10 @@ mkdir -p $INSTALL_DIR/iphoneos/curl.framework/Headers
 mkdir -p $INSTALL_DIR/iphonesimulator/curl.framework/Headers
 
 libtool -no_warning_for_no_symbols -static -o $INSTALL_DIR/iphoneos/curl.framework/curl $INSTALL_DIR/arm64_iphoneos/lib/libcurl.a
-cp -r $INSTALL_DIR/arm64_iphoneos/include/ $INSTALL_DIR/iphoneos/curl.framework/Headers
+cp -r $INSTALL_DIR/arm64_iphoneos/include/curl/ $INSTALL_DIR/iphoneos/curl.framework/Headers
 
 libtool -no_warning_for_no_symbols -static -o $INSTALL_DIR/iphonesimulator/curl.framework/curl $INSTALL_DIR/libcurl.a
-cp -r $INSTALL_DIR/arm64_iphonesimulator/include/ $INSTALL_DIR/iphonesimulator/curl.framework/Headers
+cp -r $INSTALL_DIR/arm64_iphonesimulator/include/curl/ $INSTALL_DIR/iphonesimulator/curl.framework/Headers
 
 if [ -d $BUILD_DIR/curl.xcframework ];then
     rm -rf $BUILD_DIR/curl.xcframework

@@ -1,4 +1,4 @@
-prefix=/Users/liaokun/Downloads/build-curl-openssl-zlib-for-android/build/ios/openssl/x86_64_iphonesimulator
+prefix=/Users/liaokun/Downloads/build-curl-openssl-zlib-android-ios/build/ios/openssl/x86_64_iphonesimulator
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
