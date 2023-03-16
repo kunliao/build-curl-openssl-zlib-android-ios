@@ -9,13 +9,12 @@ openssl版本openssl-3.0.7 https://www.openssl.org/source/old/3.0/openssl-3.0.7.
 
 curl版本curl-7.88.0 https://curl.se/download/curl-7.88.0.tar.xz
 
-mac上编译curl需要安装automake和autoconf。使用brew安装就行。
+curl依赖于zlib和openssl。所以先编译zlib和openssl再编译curl。ios使用内置的zlib。
 
-curl依赖于zlib和openssl。所以先编译zlib和openssl再编译curl
 
-初始化编译环境
+Build Android
 
-build_env.sh
+build-android-env.sh
 
 ```shell
 #NDK路径
@@ -38,21 +37,41 @@ BUILD_DIR=$PWD/build
 ```
 
 
-
-
-
 ```shell
 #编译zlib
-sh build-zlib.sh
+sh build-android-zlib.sh
 
 #编译openssl
-sh build-openssl.sh
+sh build-android-zopenssl.sh
 
 #编译curl
-sh build-curl.sh
+sh build-android-zcurl.sh
 
 
-#也可以直接执行build.sh,会依次自动编译zlib、openssl、curl
-sh build.sh
+#or
+sh build-android.sh
 ```
 
+Build iOS
+
+build-ios-env.sh
+
+```shell
+#!/bin/bash
+
+IOS_MIN_SDK_VERSION=12.0
+
+BUILD_DIR=$PWD/build/ios
+```
+
+```shell
+#编译openssl
+sh build-ios-zopenssl.sh
+
+#编译curl
+sh build-ios-zcurl.sh
+
+
+#or
+sh build-ios.sh
+```
