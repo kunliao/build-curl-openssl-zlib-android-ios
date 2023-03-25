@@ -1,5 +1,5 @@
 
-在mac上用Android NDK编译zlib，openssl，curl。在linux上应该也没问题。在Windows上需要安装mingw或cygwin。
+在mac上用Android NDK编译zlib，openssl，curl。在linux上应该也没问题。
 
 我是用的NDK版本是23.1.7779620
 
